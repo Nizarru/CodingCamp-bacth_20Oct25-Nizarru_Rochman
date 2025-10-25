@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Nizarru Rochman</title>
+
+    <!-- CSS External File -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="main-header flex justify-between items-center">
+      <div class="main-logo">NzR</div>
+      <nav class="flex gap-2">
+        <a href="#home-section">Home</a>
+        <a href="#profile-section">Our Profile</a>
+        <a href="#portfolio-section">Portfolio</a>
+        <a href="#message-section">Message Us</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home-section" class="hero-section animated-bg">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+
+        <div class="hero-content">
+          <h1>
+            <span id="greet-name"></span>Welcome to
+            <span class="highlight">My Portfolio</span>
+          </h1>
+          <p>
+            Discover my journey in web development and explore the projects that
+            showcase my skills and creativity.
+          </p>
+          <button
+            class="cta-button"
+            onclick="document.getElementById('portfolio-section').scrollIntoView({behavior: 'smooth'})"
+          >
+            View My Work
+          </button>
+        </div>
+      </section>
+
+      <!-- Profile Section -->
+      <section id="profile-section" class="profile-section">
+        <div class="company-info">
+          <h2>Our Profile</h2>
+
+          <div class="photo-banner"></div>
+
+          <h3>Tentang Perusahaan</h3>
+          <p>
+            Kami adalah perusahaan teknologi yang berfokus pada pengembangan
+            solusi web modern dan inovatif. Dengan tim profesional yang
+            berpengalaman, kami berkomitmen untuk menghadirkan produk
+            berkualitas tinggi yang memenuhi kebutuhan klien kami. Sejak
+            didirikan, kami telah menangani berbagai proyek dari startup hingga
+            perusahaan besar, selalu mengutamakan kepuasan pelanggan dan hasil
+            yang maksimal.
+          </p>
+
+          <h3>Visi dan Misi Perusahaan</h3>
+          <p>
+            <strong>Visi:</strong> Menjadi perusahaan teknologi terdepan yang
+            menghadirkan solusi digital inovatif dan berkualitas tinggi untuk
+            membantu bisnis berkembang di era digital.
+          </p>
+          <p>
+            <strong>Misi:</strong><br />
+            • Mengembangkan produk teknologi yang user-friendly dan efisien<br />
+            • Memberikan layanan konsultasi IT terbaik kepada klien<br />
+            • Terus berinovasi mengikuti perkembangan teknologi terkini<br />
+            • Membangun tim profesional yang kompeten dan berdedikasi<br />
+            • Menciptakan dampak positif melalui teknologi untuk masyarakat
+          </p>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio-section" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <p class="portfolio-subtitle">Explore my latest projects and achievements</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <span class="project-year">2024</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3>Proyek E-Commerce</h3>
+              <div class="tech-badges">
+                <span class="badge">HTML</span>
+                <span class="badge">Tailwind CSS</span>
+                <span class="badge">JavaScript</span>
+              </div>
+              <p>
+                Pengembangan website E-Commerce lengkap dengan validasi form dan fitur keranjang belanja interaktif yang responsif.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn-primary">Live Demo</a>
+                <a href="#" class="btn-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image project-image-2">
+              <div class="project-overlay">
+                <span class="project-year">2024</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3>Aplikasi Kalkulator</h3>
+              <div class="tech-badges">
+                <span class="badge">JavaScript</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">DOM</span>
+              </div>
+              <p>
+                Kalkulator interaktif dengan interface modern untuk latihan manipulasi DOM dan logika matematika tingkat lanjut.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn-primary">Live Demo</a>
+                <a href="#" class="btn-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image project-image-3">
+              <div class="project-overlay">
+                <span class="project-year">2025</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3>Portfolio Website</h3>
+              <div class="tech-badges">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">JavaScript</span>
+              </div>
+              <p>
+                Portfolio website modern dengan desain responsif, animasi smooth, dan user experience yang optimal di semua device.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn-primary">Live Demo</a>
+                <a href="#" class="btn-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Section -->
+      <section id="message-section" class="message-section">
+        <div class="max-w-3xl mx-auto">
+          <h2>Message Us</h2>
+          <p class="section-description">
+            Feel free to reach out for collaborations or inquiries. We'd love to
+            hear from you!
+          </p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name-input">Name:</label>
+              <input
+                type="text"
+                id="name-input"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="birth-date-input">Birth Date:</label>
+              <input
+                type="date"
+                id="birth-date-input"
+                name="birthDate"
+                required
+              />
+            </div>
+
+            <div class="form-group gender-group">
+              <label>Gender:</label>
+              <div class="radio-options">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Male"
+                    required
+                  />
+                  <span>Male</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Female"
+                  />
+                  <span>Female</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email-input">Email:</label>
+              <input
+                type="email"
+                id="email-input"
+                name="email"
+                placeholder="Enter your email address (e.g., example@gmail.com)"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message-input">Message:</label>
+              <textarea
+                id="message-input"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="button" onclick="validateForm()" class="submit-btn">
+                Send Message
+              </button>
+            </div>
+          </form>
+
+          <!-- Form Result Display -->
+          <div id="form-result" class="form-result" style="display: none;">
+            <div class="result-card">
+              <div class="result-header">
+                <h3>✅ Message Sent Successfully!</h3>
+                <button onclick="closeResult()" class="close-btn">×</button>
+              </div>
+              <div class="result-body">
+                <div class="result-item">
+                  <span class="result-label">Name:</span>
+                  <span class="result-value" id="result-name"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Email:</span>
+                  <span class="result-value" id="result-email"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Birth Date:</span>
+                  <span class="result-value" id="result-birthdate"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Gender:</span>
+                  <span class="result-value" id="result-gender"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Message:</span>
+                  <span class="result-value" id="result-message"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Submitted at:</span>
+                  <span class="result-value" id="result-time"></span>
+                </div>
+              </div>
+              <div class="result-footer">
+                <p>We will contact you soon! 🚀</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p class="text-lg">&copy; 2025 Nizarru Rochman. All rights reserved.</p>
+        <p class="text-sm mt-2 opacity-60">
+          Built with HTML, CSS, and JavaScript
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript External File -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
